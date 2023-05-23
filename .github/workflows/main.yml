@@ -8,12 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Execute remote ssh commands
+      run: echo 'pas 1'
       #uses: appleboy/ssh-action@master
-      with:
-        host: ${{ secrets.SSH_HOST }}
-        username: ${{ secrets.SSH_USERNAME }}
-        key: ${{ secrets.SSH_PRIVATE_KEY }}
-        script: |
-          cd /var/www/html/sprint6
-          git pull
+
 
