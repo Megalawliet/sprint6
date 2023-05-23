@@ -9,8 +9,8 @@ jobs:
     steps:
     - name: Execute remote ssh commands
       run:
-        echo 'pas 1'
         echo ${{ secrets.SSH_PRIVATE_KEY }}
+        
       
 
 
